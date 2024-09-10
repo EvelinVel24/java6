@@ -6,10 +6,11 @@ public class DrillingExercise2 {
         int positivos = 0, negativos = 0, ceros = 0;
 
         // Solicitar 10 números enteros
-        System.out.println("Ingresa 10 números enteros:");
         for (int i = 0; i < 10; i++) {
+            System.out.println("Introduce número:"); // Mensaje corregido
             int numero = scanner.nextInt();
 
+            // Contar positivos, negativos y ceros
             if (numero > 0) {
                 positivos++;
             } else if (numero < 0) {
@@ -20,11 +21,12 @@ public class DrillingExercise2 {
         }
 
         // Mostrar el total de positivos, negativos y ceros
-        System.out.println("Positivos: " + positivos);
-        System.out.println("Negativos: " + negativos);
-        System.out.println("Ceros: " + ceros);
+        System.out.println("El numero de ceros introducidos es de: " + ceros);
+        System.out.println("El numero Positivos introducidos es de: " + positivos);
+        System.out.println("El numero Negativos introducidos es de: " + negativos);
 
         // Cerrar el scanner
         scanner.close();
     }
 }
+
